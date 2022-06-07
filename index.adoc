@@ -1,0 +1,50 @@
+# My Title
+Alon Bar-Lev <alon.barlev@gmail.com>
+////
+    NOTE: rootdir must be releative of this page
+    and the root of the project.
+////
+:rootdir: .
+include::{rootdir}/attrs.adoci[]
+
+## Title 2
+
+### Title 3
+
+Hello world!
+
+////
+    NOTE: every generated image must be redirected into
+    images-gen/* with unique name so they not overwrite
+    each other.
+////
+[plantuml,target="images-gen/diagram1"]
+....
+a->b: c
+....
+
+[plantuml,target="images-gen/math11"]
+....
+@startmath
+f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)
+@endmath
+....
+
+////
+    NOTE: for every adoc link you refer, you must use
+    the {link_suffix} variable to append '.adoc, '.html', '.pdf' or any other.
+////
+The suffix of links is: `{link_suffix}`
+
+link:dir1/doc1{link_suffix}[This is a link]
+
+NOTE: This is a note to check offline icons
+
+This is a source to check offline source highlight
+
+[source,javascript]
+----
+function test() {
+    console.log("Hello");
+}
+----

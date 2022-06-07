@@ -1,0 +1,25 @@
+# Title
+Alon Bar-Lev <alon.barlev@gmail.com>
+:rootdir: ..
+include::{rootdir}/attrs.adoci[]
+:doctype: book
+
+## Title 2
+
+### Title 3
+
+Hello world!
+
+[plantuml,target="images-gen/diagram2"]
+....
+a->b: c
+....
+
+link:../index{link_suffix}[This is a link]
+
+[source,javascript]
+----
+function test() {
+    console.log("Hello");
+}
+----

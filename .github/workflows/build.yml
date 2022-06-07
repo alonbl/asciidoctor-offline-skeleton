@@ -1,0 +1,39 @@
+name: build
+
+on:
+  - push
+  - pull_request
+
+env:
+  ASCIIDOCTORJ_URL: https://search.maven.org/remotecontent?filepath=org/asciidoctor/asciidoctorj/2.5.5/asciidoctorj-2.5.5-bin.zip
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          path: example1
+      - name: dependencies.install
+        run: |
+          sudo apt install -y openjdk-11-jdk-headless unzip
+          curl --fail -L "${ASCIIDOCTORJ_URL}" > "asciidoctorj-bin.zip"
+          unzip asciidoctorj-bin.zip
+          rm asciidoctorj-bin.zip
+          ln -s asciidoctorj-* asciidoctorj
+      - name: build
+        env:
+          ASCIIDOCTORJ_HOME: ${{ github.workspace }}/asciidoctorj
+          ASCIIDOCTORJ_JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+        working-directory: example1
+        run: |
+          ./build.sh
+      - name: upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: |
+            example1/*.tar.gz

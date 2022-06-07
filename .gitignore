@@ -1,0 +1,5 @@
+*.cache
+*.tmp
+.asciidoctor
+images-gen
+/css/asciidoctor.css

@@ -1,0 +1,20 @@
+//:allow-uri-read:
+//:data-uri:
+:copycss:
+:docinfo: shared
+:docinfodir: {rootdir}/docinfo
+:highlightjsdir: {rootdir}/highlightjs
+:iconfont-remote!:
+:icons: font
+:link_suffix: .adoc
+:linkattrs:
+:linkcss:
+:pdf-stylesdir: pdf-styles
+:pdf-theme: local
+:sectnumlevels: 4
+:sectnums:
+:source-highlighter: highlight.js
+:stylesdir: {rootdir}/css
+:toc: left
+:toclevels: 4
+:webfonts!:

@@ -1,0 +1,12 @@
+extends: default
+title-page:
+  logo:
+    image: image:logo.png[width=150]
+header:
+  height: 40
+  recto:
+    right:
+      content: image:logo.png[width=50]
+  verso:
+    right:
+      content: $header_recto_right_content
