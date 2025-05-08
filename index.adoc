@@ -13,6 +13,8 @@ include::{rootdir}/attrs.adoci[]
 
 Hello world!
 
+This is {PROJECT_FQN}.
+
 ////
     NOTE: every generated image must be redirected into
     images-gen/* with unique name so they not overwrite
@@ -23,11 +25,11 @@ Hello world!
 a->b: c
 ....
 
-[plantuml,target="images-gen/math11"]
+[plantuml,target="images-gen/math1"]
 ....
-@startmath
-f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)
-@endmath
+@startuml
+:<math>f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)</math>;
+@enduml
 ....
 
 ////
