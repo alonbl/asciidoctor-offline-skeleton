@@ -13,6 +13,8 @@ include::{rootdir}/attrs.adoci[]
 
 Hello world!
 
+This is {PROJECT_FQN}.
+
 ////
     NOTE: every generated image must be redirected into
     images-gen/* with unique name so they not overwrite

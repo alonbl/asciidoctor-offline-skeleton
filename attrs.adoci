@@ -9,7 +9,7 @@
 :link_suffix: .adoc
 :linkattrs:
 :linkcss:
-:pdf-stylesdir: pdf-styles
+:pdf-themesdir: ./pdf-themes
 :pdf-theme: local
 :sectnumlevels: 4
 :sectnums:

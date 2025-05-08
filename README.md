@@ -19,16 +19,3 @@ Refer to `util/download.sh` for download hints.
      * ubuntu: use distribution graphviz
      * windows: https://www.graphviz.org/download/#windows
   * [jlatexmath](https://github.com/opencollab/jlatexmath): optional, math statements.
-
-## Installation
-
-Set the following environment variables in your `~/.bash_profile`:
-
-* `ASCIIDOCTORJ_JAVA_HOME`: Java Home to use.
-* `ASCIIDOCTORJ_HOME`: The directory you extracted asciidoctorj archive.
-
-## Build
-
-```sh
-./build
-```

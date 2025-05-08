@@ -1,5 +1,14 @@
 *.cache
+*.stamp
+*.swp
+*.tar.gz
 *.tmp
 .asciidoctor
-images-gen
 /css/asciidoctor.css
+dest/
+dist/
+downloads/
+highlightjs/
+images-gen
+tools/
+~*
